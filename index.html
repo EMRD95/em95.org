@@ -33,7 +33,10 @@
       gap: 1rem;
     }
     li a {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
       padding: 0.9rem 2.5rem;
       border: 1px solid #2a2a2a;
       border-radius: 8px;
@@ -48,15 +51,21 @@
       color: #fff;
       background: rgba(255,255,255,0.03);
     }
+    li a img {
+      width: 20px;
+      height: 20px;
+      display: block;
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>em95</h1>
     <ul>
-      <li><a href="https://keyboardrage.em95.org">KeyboardRage</a></li>
-      <li><a href="https://drivestat.em95.org">DriveStat</a></li>
-      <li><a href="https://touchgrass.em95.org">TouchGrass</a></li>
+      <li><a href="https://keyboardrage.em95.org"><img src="https://keyboardrage.em95.org/favicon.ico" alt=""> KeyboardRage</a></li>
+      <li><a href="https://drivestat.em95.org"><img src="https://drivestat.em95.org/favicon.svg" alt=""> DriveStat</a></li>
+      <li><a href="https://touchgrass.em95.org"><img src="https://touchgrass.em95.org/favicon.ico" alt=""> TouchGrass</a></li>
     </ul>
   </main>
 </body>
